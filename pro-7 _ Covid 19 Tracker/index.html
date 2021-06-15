@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Status</title>
+    <link rel="stylesheet" href="plugins/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="main-title">
+            <img src="images/coronavirus.svg" alt="covid19 icon" width="60px">
+            <a href="index.html">Covid19 Status</a>
+        </div>
+    </header>
+    <main>
+        <div class="stats">
+            <div class="country">
+                <div class="name"></div>
+                <button class="change-country">
+                    تغییر کشور
+                    <i class="fas fa-angle-down"></i>
+                </button>
+                <div class="search-country hide">
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="نام کشور را بنویسید" />
+                        <button class="close">
+                            <i class="fal fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="country-list"></div>
+                </div>
+            </div>
+            <div class="latest-report">
+                <div class="total-cases">
+                    <img src="images/medical-mask.svg" alt="cases-svg" width="55px">
+                    <div class="title">مجموع بیماران</div>
+                    <div class="value">0</div>
+                </div>
+                <div class="recovered">
+                    <img src="images/doctor.svg" alt="cases-svg" width="55px">
+                    <div class="title">بیماران بهبود یافته</div>
+                    <div class="value">0</div>
+                </div>
+                <div class="deaths">
+                    <img src="images/danger.svg" alt="cases-svg" width="55px">
+                    <div class="title">بیماران از دست رفته</div>
+                    <div class="value">0</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="plugins/all.min.js"></script>
+<script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+<script src="javascript/countries.js"></script>
+<script src="javascript/app.js"></script>
+
+</html>

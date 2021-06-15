@@ -1,0 +1,21 @@
+@font-face {
+  font-family: faFont;
+  src: url(/plugins/IranSans.ttf);
+}
+
+@font-face {
+  font-family: enFont;
+  src: url(/plugins/Gilroy-Light.otf);
+}
+
+@font-face {
+  font-family: enFont1;
+  src: url(/plugins/Poppins.ttf);
+}
+
+@mixin flex($dir, $justify, $align) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $justify;
+  align-items: $align;
+}
